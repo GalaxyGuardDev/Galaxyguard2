@@ -1,4 +1,3 @@
---This watermark is used to delete the file if its cached, remove it to make the file persist after commits.
 local GuiLibrary = shared.GuiLibrary
 local playersService = game:GetService("Players")
 local textService = game:GetService("TextService")
@@ -57,8 +56,8 @@ local store = {
 		universalLagbacks = 0
 	},
 	whitelist = {
-		chatStrings1 = {GALAXYGUARD = "vape"},
-		chatStrings2 = {vape = "GALAXYGUARD"},
+		chatStrings1 = {GALAXYGUARD = "galaxy"},
+		chatStrings2 = {GALAXYGUARD = "galaxy"},
 		clientUsers = {},
 		oldChatFunctions = {}
 	},
