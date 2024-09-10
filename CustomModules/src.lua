@@ -57,8 +57,8 @@ local store = {
 		universalLagbacks = 0
 	},
 	whitelist = {
-		chatStrings1 = {helloimusinginhaler = "vape"},
-		chatStrings2 = {vape = "helloimusinginhaler"},
+		chatStrings1 = {GALAXYGUARD = "vape"},
+		chatStrings2 = {vape = "GALAXYGUARD"},
 		clientUsers = {},
 		oldChatFunctions = {}
 	},
@@ -104,7 +104,7 @@ end
 
 local function vapeGithubRequest(scripturl)
 	if not isfile("vape/"..scripturl) then
-		local suc, res = pcall(function() return game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/"..readfile("vape/commithash.txt").."/"..scripturl, true) end)
+		local suc, res = pcall(function() return game:HttpGet("https://raw.githubusercontent.com/GalaxyGuardDev/Galaxyguard2/"..readfile("vape/commithash.txt").."/"..scripturl, true) end)
 		assert(suc, res)
 		assert(res ~= "404: Not Found", res)
 		if scripturl:find(".lua") then res = "--This watermark is used to delete the file if its cached, remove it to make the file persist after commits.\n"..res end
@@ -406,10 +406,10 @@ local function getSpeed()
 		local armor = store.localInventory.inventory.armor[3]
 		if type(armor) ~= "table" then armor = {itemType = ""} end
 		if armor.itemType == "speed_boots" then
-			speed = speed + 12
+			speed = speed + 18
 		end
 		if store.zephyrOrb ~= 0 then
-			speed = speed + 12
+			speed = speed + 18
 		end
 	end
 	return speed
@@ -9010,7 +9010,7 @@ task.spawn(function()
 end)
 
 
--- you really thought I'm making beam exploit and scythe exploit public fuck no lmfao 😆 
+-- you really thought I'm making beam exploit multiaura and scythe exploit public fuck no lmfao 😆 
 
 
 run(function()
